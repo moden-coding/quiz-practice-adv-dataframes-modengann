@@ -42,7 +42,7 @@ def main():
     job_description = pd.read_csv("hr_job_description.csv")
 
     print(f"The total spent on salaries is {find_salary_sum(demo_data)}")
-    merged_data = merge_dataframes(salary_data, job_description)
+    merged_data = merge_dataframes(demo_data, job_description)
     only_complete_data = drop_any_missing(merged_data)
 
 
